@@ -11,7 +11,7 @@ Please check out the READMEs in each directory for more information on how to ru
 Use requirement.txt for model setup 
 
 # Conservative Model
-![Conservative Model](conservative.gif)
+![Conservative Model](Results/conservative.gif)
 
 # Aggressive Model
-![Aggressive Model](aggressive.gif)
+![Aggressive Model](Results/aggressive.gif)

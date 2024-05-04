@@ -7,19 +7,24 @@ This repository contains the prompts that we used for each domain as well as cod
 Please check out the READMEs in each directory for more information on how to run things.
 
 # Model Setup
+
 - We use GPT3 for our experiments. You will need to have an API key from them saved in a file named Mykey.txt.
 - Use requirement.txt for model envrioment setup：
   ```pip install -r requirements.txt```
 
 # Model Work Flow:
 
+![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/Framework_fig.png)
 
-# Conservative Model
+## Conservative Model and Aggressive Model:
+
+![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/casestudy430.png)
 
 An example of conservative model：
+
 ![Conservative Model](Results/conservative.gif)
 
-# Aggressive Model
 
 An example of agrassive model：
+
 ![Aggressive Model](Results/aggressive.gif)

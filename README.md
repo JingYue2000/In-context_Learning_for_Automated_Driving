@@ -8,7 +8,7 @@ Please check out the READMEs in each directory for more information on how to ru
 
 # Model Setup
 
-- We use GPT3 for our experiments. You will need to have an API key from them saved in a file named Mykey.txt.
+- We use GPT3 for our experiments. You will need to have an API key from them saved in a file named My-key.txt.
 - Use requirement.txt for model environment setup：
   ```pip install -r requirements.txt```
 

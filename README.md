@@ -6,6 +6,10 @@ This repository contains the prompts that we used for each domain as well as cod
 
 Please check out the READMEs in each directory for more information on how to run things.
 
+# Description
+
+We have developed and implemented a framework that utilizes Large Language Models (LLMs) to assist Reinforcement Learning (RL) agents in better simulating human driving behavior. First, we define the desired driving style and output format, and input them into the agent. Then, we describe the current scenario faced by the ego car to the LLM. Except for the first round, in each subsequent round, we provide the LLM with the decision output from the previous round, enabling better context understanding. By comparing the LLM's output decision with the decision made by the RL agent, we generate a reward function to train the LLM-RL agent.
+
 # Model Setup
 
 - We use GPT3 for our experiments. You will need to have an API key from them saved in a file named MY_KEY.txt.

@@ -23,6 +23,10 @@ Our framework integrates a Language Model (LM) to process textual prompts as inp
 
 # Prompt Structure
 
+![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/prompt429.png)
+
+A prompt for one interaction consists of the last action, the predefined prompt, and the scene description. This description includes available actions, a general overview, and a safety evaluation. 
+
 # Conservative Model and Aggressive Model
 
 ![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/casestudy430.png)

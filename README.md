@@ -1,4 +1,4 @@
-# In-context_Learning_for_Automated_Driving :smile:
+# In-context_Learning_for_Automated_Driving 🤔
 
 The code in this repository is based on the paper Reward Design with Language Models. 
 

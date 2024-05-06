@@ -8,28 +8,28 @@ Please check out the READMEs in each directory for more information on how to ru
 
 # Description
 
-We implemented a framework that utilizes LLMs to assist Reinforcement Learning (RL) agents in better simulating human driving behavior. First, we define the desired driving style and output format, and input them into the agent. Then, we describe the current scenario faced by the ego car to the LLM. Except for the first round, in each subsequent round, we provide the LLM with the decision output from the previous round, enabling better context understanding. By comparing the LLM's output decision with the decision made by the RL agent, we generate a reward function to train the LLM-RL agent.
+We implemented a framework that utilizes LLMs to assist Reinforcement Learning (RL) agents in better simulating human driving behavior. First, we define the desired driving style and output format and input them into the agent. Then, we describe the current scenario the ego car faces to the LLM. Except for the first round, in each subsequent round, we provide the LLM with the decision output from the previous round, enabling better context understanding. By comparing the LLM's output decision with the decision made by the RL agent, we generate a reward function to train the LLM-RL agent.
 
 # Model Setup
 
-- We use GPT3 for our experiments. You will need to have an API key from them saved in a file named MY_KEY.txt.
+- We use GPT3 for our experiments. You will need an API key from them saved in a file named MY_KEY.txt.
 - Use requirement.txt for model environment setup：
   ```pip install -r requirements.txt```
 
 # Model Work Flow
 
-![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/Results/Framework_fig.png)
+![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/Results/Framework.png)
 Our framework integrates a Language Model (LM) to process textual prompts as input and generate a reward signal. The input prompt consists of three primary components: the Task Description, the User Objective, and the Last Outcome. Specifically, the LM functions by accepting a concatenated version of these components and returns a textual string. This output is then analyzed by a parser, which translates the text into a binary reward signal. The binary reward signal is subsequently utilized to train a Reinforcement Learning (RL) agent. By employing the LM as a proxy for the traditional reward function, our framework is compatible with various RL training algorithms, enhancing adaptability and potential applications.
 
 # Prompt Structure
 
-![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/Results/prompt429.png)
+![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/Results/prompt_Structure.png)
 
 A prompt for one interaction consists of the last action, the predefined prompt, and the scene description. This description includes available actions, a general overview, and a safety evaluation. 
 
 # Conservative Model and Aggressive Model
 
-![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/Results/casestudy430.png)
+![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/Results/Primpt_CaseStudy.png)
 
 An example of conservative model：
 

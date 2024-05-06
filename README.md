@@ -29,7 +29,7 @@ A prompt for one interaction consists of the last action, the predefined prompt,
 
 # Conservative Model and Aggressive Model
 
-![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/Results/Primpt_CaseStudy.png)
+![image](https://github.com/JingYue2000/In-context_Learning_for_Automated_Driving/blob/main/Results/Prompt_CaseStudy.png)
 
 An example of conservative model：
 
